@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:  
+metadata:
   name: paymentservice
   labels:
     app: paymentservice
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: smilexcasper/nginx_otus:0.0.2
+        image: smilexcasper/nginx_otus:0.0.3
         env:
         - name: PRODUCT_CATALOG_SERVICE_ADDR
           value: 127.0.0.1
