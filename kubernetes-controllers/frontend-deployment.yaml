@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: smilexcasper/nginx_otus:0.0.1
+        image: smilexcasper/nginx_otus:0.0.2
         readinessProbe:
           initialDelaySeconds: 10
           httpGet:
